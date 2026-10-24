@@ -1,11 +1,10 @@
 ---
 change_id: u1a-board-port
 title: U1A board port (measyu1a)
-status: implemented
+status: archived
 created: 2026-10-24
 updated: 2026-10-24
-archived_at: null
-archived_at: null
+archived_at: 2026-10-24T18:54:47Z
 ---
 
 ## Notes
