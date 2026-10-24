@@ -75,3 +75,4 @@ arrives. Do not record a verdict from memory.
 - FEL entry sequence not verified.
 - FR-010 update policy (card backup) deferred.
 - Upstream PR deferred (fork shallow).
+- Passwordless SSH enabled for `root` and `pawel` (uid 1000, NOPASSWD sudo) via `card-passwordless-ssh.sh` using the `oracle-hunter` key; `PasswordAuthentication no` on the U1A.
