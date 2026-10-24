@@ -411,17 +411,17 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 
 #### Automated
 
-- [x] 2.1 `docker info` succeeds
-- [x] 2.2 The build exits 0
-- [x] 2.3 The image exists in `output/images/`
-- [x] 2.4 The image contains the custom DTB
-- [x] 2.5 `armbianEnv.txt` contains the custom `fdtfile`
-- [x] 2.6 Kernel config and Wi-Fi firmware checks pass
+- [x] 2.1 `docker info` succeeds — dfc1a58
+- [x] 2.2 The build exits 0 — dfc1a58
+- [x] 2.3 The image exists in `output/images/` — dfc1a58
+- [x] 2.4 The image contains the custom DTB — dfc1a58
+- [x] 2.5 `armbianEnv.txt` contains the custom `fdtfile` — dfc1a58
+- [x] 2.6 Kernel config and Wi-Fi firmware checks pass — dfc1a58
 
 #### Manual
 
-- [x] 2.7 Build log shows the DRAM hook and no DTS/patch failures
-- [x] 2.8 Image metadata identifies `Measy U1A`
+- [x] 2.7 Build log shows the DRAM hook and no DTS/patch failures — dfc1a58
+- [x] 2.8 Image metadata identifies `Measy U1A` — dfc1a58
 
 ### Phase 3: Card Backup, Flash, and Boot
 
@@ -430,15 +430,15 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 - [ ] 3.1 Card backup exists, passes `zstd -t`, and has a SHA256
 - [x] 3.2 Written card region matches the uncompressed image
 - [x] 3.3 Card `armbianEnv.txt` has `disp_mode=1280x720p60`
-- [ ] 3.4 Evidence files exist on the host
+- [x] 3.4 Evidence files exist on the host
 
 #### Manual
 
-- [ ] 3.5 HDMI login prompt; `root`/`1234` works
-- [ ] 3.6 `/proc/device-tree/model` is `Measy U1A`
-- [ ] 3.7 `dmesg` has no fatal errors and no Ethernet/SATA probe errors
-- [ ] 3.8 Wi-Fi associates and USB enumerates
-- [ ] 3.9 Removing the SD boots stock Android
+- [x] 3.5 HDMI login prompt; `root`/`1234` works
+- [x] 3.6 `/proc/device-tree/model` is `Measy U1A`
+- [x] 3.7 `dmesg` has no fatal errors and no Ethernet/SATA probe errors
+- [x] 3.8 Wi-Fi associates and USB enumerates
+- [x] 3.9 Removing the SD boots stock Android
 
 ### Phase 4: Results and Close-out
 

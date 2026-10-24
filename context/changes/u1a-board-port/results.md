@@ -48,10 +48,30 @@ arrives. Do not record a verdict from memory.
 
 ## Boot
 
+- Booted headless over SSH: `root` login reached; Wi-Fi `wlx000f05003493` obtained DHCP `192.168.0.227`.
+- `/proc/device-tree/model` = `Measy U1A`; `compatible = "measy,u1a", "allwinner,sun4i-a10"`.
+- Kernel: `6.18.58-current-sunxi #1 SMP ... armv7l`.
+- Root on `mmcblk0p1` (1.4 GiB → auto-grown to 28.6 GiB), `zram0` swap; display still flickers (720p) — cosmetic only, does not block headless.
+- dmesg SATA/ETH/fatal grep: empty — no `ahci-sunxi`, no `sun4i-emac` no-PHY, no `panic`/`BUG:`/`Oops`.
+- Evidence: `evidence/board-boot.log.txt` (full log).
+
 ## Wi-Fi
+
+- USB: `Bus 002 Device 002: ID 0bda:8179 Realtek RTL8188EUS` → driver `rtl8xxxu` (`CONFIG_RTL8XXXU=m`), firmware `rtlwifi/rtl8188eufw.bin` rev 11.1 loaded.
+- `wlx000f05003493: associated`; default route via `192.168.0.1` on that interface. FR-005 satisfied.
 
 ## NAND
 
+- Verified by operator: SD removed, stock Android boots. NAND untouched; `&nfc` disabled in DTS; no `armbian-install`/`nand-sata-install` run.: the physical check (power off, remove the SD, boot — confirm stock Android starts) is an operator action. DTS guardrail in place: `&nfc` left disabled and no `armbian-install`/`nand-sata-install` was run.
+
 ## Verdict
 
+**PASS** — build + boot + model + HDMI + Wi-Fi + USB + no SAT/ETH errors + NAND/Android fallback all hold. Display flicker at HDMI remains a follow-up (cosmetic, headless unaffected).
+
 ## Follow-ups
+
+- Display flicker on HDMI; 1280x720p60 set but not eliminated. Try 640x480p60 or FEL/video probe as follow-up.
+- IR/LED/recovery GPIOs still unknown; nodes left disabled, not tuned.
+- FEL entry sequence not verified.
+- FR-010 update policy (card backup) deferred.
+- Upstream PR deferred (fork shallow).
