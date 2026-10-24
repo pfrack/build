@@ -404,8 +404,8 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 
 #### Manual
 
-- [ ] 1.6 Board values match the PRD
-- [ ] 1.7 DTS overrides reviewed (only unused Cubieboard nodes disabled)
+- [x] 1.6 Board values match the PRD
+- [x] 1.7 DTS overrides reviewed (only unused Cubieboard nodes disabled)
 
 ### Phase 2: Docker Build
 
@@ -427,26 +427,26 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 
 #### Automated
 
-- [ ] 3.1 Card backup exists, passes `zstd -t`, and has a SHA256
-- [x] 3.2 Written card region matches the uncompressed image
-- [x] 3.3 Card `armbianEnv.txt` has `disp_mode=1280x720p60`
-- [x] 3.4 Evidence files exist on the host
+- [ ] 3.1 Card backup exists, passes `zstd -t`, and has a SHA256 (skipped at operator request)
+- [x] 3.2 Written card region matches the uncompressed image — e179ddc
+- [x] 3.3 Card `armbianEnv.txt` has `disp_mode=1280x720p60` — e179ddc
+- [x] 3.4 Evidence files exist on the host — e179ddc
 
 #### Manual
 
-- [x] 3.5 HDMI login prompt; `root`/`1234` works
-- [x] 3.6 `/proc/device-tree/model` is `Measy U1A`
-- [x] 3.7 `dmesg` has no fatal errors and no Ethernet/SATA probe errors
-- [x] 3.8 Wi-Fi associates and USB enumerates
-- [x] 3.9 Removing the SD boots stock Android
+- [x] 3.5 HDMI login prompt; `root`/`1234` works — e179ddc
+- [x] 3.6 `/proc/device-tree/model` is `Measy U1A` — e179ddc
+- [x] 3.7 `dmesg` has no fatal errors and no Ethernet/SATA probe errors — e179ddc
+- [x] 3.8 Wi-Fi associates and USB enumerates — e179ddc
+- [x] 3.9 Removing the SD boots stock Android — e179ddc
 
 ### Phase 4: Results and Close-out
 
 #### Automated
 
-- [ ] 4.1 `results.md` records one verdict
-- [ ] 4.2 `change.md` status is `implemented`
+- [x] 4.1 `results.md` records one verdict
+- [x] 4.2 `change.md` status is `implemented`
 
 #### Manual
 
-- [ ] 4.3 Verdict and follow-ups reviewed
+- [x] 4.3 Verdict and follow-ups reviewed — operator: "pass"
