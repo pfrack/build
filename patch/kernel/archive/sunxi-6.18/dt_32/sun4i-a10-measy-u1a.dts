@@ -1,0 +1,17 @@
+/dts-v1/;
+#include "sun4i-a10-cubieboard.dts"
+
+/ {
+	model = "Measy U1A";
+	compatible = "measy,u1a", "allwinner,sun4i-a10";
+};
+
+&ahci { status = "disabled"; };
+&codec { status = "disabled"; };
+&emac { status = "disabled"; };
+&emac_sram { status = "disabled"; };
+&ir0 { status = "disabled"; };
+&mdio { status = "disabled"; };
+&reg_ahci_5v { status = "disabled"; };
+&spi0 { status = "disabled"; };
+&{/leds} { status = "disabled"; };

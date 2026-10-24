@@ -1,0 +1,8 @@
+verbosity=1
+bootlogo=false
+console=both
+disp_mode=1920x1080p60
+overlay_prefix=sun4i-a10
+rootdev=UUID=ea41f0cf-06d3-4339-8353-75db6929d1fd
+rootfstype=ext4
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
