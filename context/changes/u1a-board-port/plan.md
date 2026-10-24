@@ -396,11 +396,11 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 
 #### Automated
 
-- [x] 1.1 `config/boards/measyu1a.tvb` exists and `bash -n` passes
-- [x] 1.2 `patch/kernel/archive/sunxi-6.18/dt_32/sun4i-a10-measy-u1a.dts` exists
-- [x] 1.3 `configdump` reports the expected board variables
-- [x] 1.4 The DTS does not enable `&nfc`
-- [x] 1.5 `results.md` scaffold exists
+- [x] 1.1 `config/boards/measyu1a.tvb` exists and `bash -n` passes — 302f705
+- [x] 1.2 `patch/kernel/archive/sunxi-6.18/dt_32/sun4i-a10-measy-u1a.dts` exists — 302f705
+- [x] 1.3 `configdump` reports the expected board variables — 302f705
+- [x] 1.4 The DTS does not enable `&nfc` — 302f705
+- [x] 1.5 `results.md` scaffold exists — 302f705
 
 #### Manual
 
@@ -411,25 +411,25 @@ Record the verdict, the evidence index, and the follow-ups. Set the change statu
 
 #### Automated
 
-- [ ] 2.1 `docker info` succeeds
-- [ ] 2.2 The build exits 0
-- [ ] 2.3 The image exists in `output/images/`
-- [ ] 2.4 The image contains the custom DTB
-- [ ] 2.5 `armbianEnv.txt` contains the custom `fdtfile`
-- [ ] 2.6 Kernel config and Wi-Fi firmware checks pass
+- [x] 2.1 `docker info` succeeds
+- [x] 2.2 The build exits 0
+- [x] 2.3 The image exists in `output/images/`
+- [x] 2.4 The image contains the custom DTB
+- [x] 2.5 `armbianEnv.txt` contains the custom `fdtfile`
+- [x] 2.6 Kernel config and Wi-Fi firmware checks pass
 
 #### Manual
 
-- [ ] 2.7 Build log shows the DRAM hook and no DTS/patch failures
-- [ ] 2.8 Image metadata identifies `Measy U1A`
+- [x] 2.7 Build log shows the DRAM hook and no DTS/patch failures
+- [x] 2.8 Image metadata identifies `Measy U1A`
 
 ### Phase 3: Card Backup, Flash, and Boot
 
 #### Automated
 
 - [ ] 3.1 Card backup exists, passes `zstd -t`, and has a SHA256
-- [ ] 3.2 Written card region matches the uncompressed image
-- [ ] 3.3 Card `armbianEnv.txt` has `disp_mode=1280x720p60`
+- [x] 3.2 Written card region matches the uncompressed image
+- [x] 3.3 Card `armbianEnv.txt` has `disp_mode=1280x720p60`
 - [ ] 3.4 Evidence files exist on the host
 
 #### Manual
